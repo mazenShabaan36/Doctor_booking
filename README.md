@@ -1,6 +1,6 @@
 # doctor_appointment
 
-A new Flutter project.
+A Project where you can appoint or cancel a time with the doctor with many doctors  
 
 ## Getting Started
 
