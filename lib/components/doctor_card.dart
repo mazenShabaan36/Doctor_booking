@@ -65,7 +65,7 @@ class DoctorCard extends StatelessWidget {
                           fontWeight: FontWeight.normal,
                         ),
                       ),
-                      Spacer(),
+                     const  Spacer(),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: <Widget>[
@@ -73,7 +73,7 @@ class DoctorCard extends StatelessWidget {
                             Icons.star_border,
                             color: Colors.yellow.shade800,
                           ),
-                          Spacer(
+                          const Spacer(
                             flex: 1,
                           ),
                           Text('${rating}'),
@@ -84,7 +84,7 @@ class DoctorCard extends StatelessWidget {
                           Spacer(
                             flex: 1,
                           ),
-                          Text('${reviews}'),
+                          Text('$reviews'),
                           Spacer(
                             flex: 2,
                           ),

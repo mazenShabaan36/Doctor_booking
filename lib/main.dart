@@ -37,6 +37,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter doctor app',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        useMaterial3: false,
         inputDecorationTheme: const InputDecorationTheme(
             focusColor: Config.primaryColor,
             border: Config.outlinedBorder,

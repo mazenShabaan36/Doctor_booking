@@ -5,7 +5,7 @@ class Doctor {
   final String imageUrl;
   final String work;
   final String about;
-  final Map<String, double> Patient;
+  final Map<String, double> Patient; //for reviews
   final String Experience;
   final double rating;
 

@@ -4,13 +4,13 @@ import 'package:flutter/material.dart';
 class doctors with ChangeNotifier {
   List<Doctor> _doctorsData = [
     Doctor(
-        name: 'Mazen shabaan',
+        name: 'Kenzy Mohamed',
         dep: 'dental',
         college: 'Faculty of dentistry Alexandria university',
-        imageUrl: 'assets/doctor_1.jpg',
+        imageUrl: 'assets/kanoza.jpg',
         work: "shark el madina hospital",
         about:
-            "Dr mazen shabaan is an experience dentist at shark el madina hospital,he is graduated from faculty of dentistry Alexandria university",
+            "Dr kenzy mohamed is an experience dentist at shark el madina hospital,he is graduated from faculty of dentistry Alexandria university",
         Patient: {
           "ahmed": 4,
           "mohamed": 5,
@@ -22,13 +22,13 @@ class doctors with ChangeNotifier {
         Experience: "10 years",
         rating: 4.5),
     Doctor(
-        name: 'Mahmoud ahmed',
+        name: 'Aya Mohamed',
         dep: 'cardiology',
         college: 'Faculty of Medicine Alexandria university',
-        imageUrl: 'assets/doctor_2.jpg',
+        imageUrl: 'assets/osho.jpeg',
         work: "el madina hospital",
         about:
-            "Dr mahmoud ahmed is an experience cardiologist at el madina hospital,he is graduated from faculty of medicine Alexandria university",
+            "Dr aya mohamed is an experience cardiologist at el madina hospital,he is graduated from faculty of medicine Alexandria university",
         Patient: {
           "ahmed": 4,
           "mohamed": 3,
@@ -40,13 +40,13 @@ class doctors with ChangeNotifier {
         Experience: "10 years",
         rating: 3.5),
     Doctor(
-        name: 'abdo ahmed',
+        name: 'ahmed fathallah',
         dep: 'dental',
         college: 'Faculty of Medicine Alexandria university',
-        imageUrl: 'assets/doctor_3.jpg',
+        imageUrl: 'assets/fathy.jpeg',
         work: "shark el madina hospital",
         about:
-            "Dr abdo ahmed is an experience Repiratory doctor at sedi beshr hospital,he is graduated from faculty of medicine Alexandria university",
+            "Dr ahmed fathallah is an experience Repiratory doctor at sedi beshr hospital,he is graduated from faculty of medicine Alexandria university",
         Patient: {
           "ahmed": 2,
           "mohamed": 4,

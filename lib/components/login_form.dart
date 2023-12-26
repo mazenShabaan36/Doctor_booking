@@ -38,7 +38,7 @@ class _LoginFormState extends State<LoginForm> {
               controller: _passController,
               keyboardType: TextInputType.visiblePassword,
               cursorColor: Config.primaryColor,
-              obscureText: true,
+              obscureText: obsecurePass,
               decoration: InputDecoration(
                 hintText: 'Password',
                 labelText: 'Password',

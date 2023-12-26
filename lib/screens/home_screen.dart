@@ -59,11 +59,11 @@ class _HomePageState extends State<HomePage> {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const <Widget>[
+                  children:  <Widget>[
                     Text(
-                      'Mazen',
+                      'kenzy',
                       style: TextStyle(
                         fontSize: 26,
                         fontWeight: FontWeight.bold,
@@ -72,7 +72,7 @@ class _HomePageState extends State<HomePage> {
                     SizedBox(
                       child: CircleAvatar(
                         radius: 30,
-                        backgroundImage: AssetImage('assets/me.jpg'),
+                        backgroundImage: AssetImage('assets/kanoza.jpg'),
                       ),
                     ),
                   ],
@@ -142,14 +142,14 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 Config.spaceSmall,
-                SizedBox(
+                SizedBox( //to avoid parent error
                   height: MediaQuery.of(context).size.height * 0.5,
                   child: ListView.builder(
                       itemBuilder: (contex, index) {
                         return DoctorCard(
                           route: 'doc_details',
                           dep: myDoctorProvider.doctorsD[index].dep,
-                          imageurl: myDoctorProvider.doctorsD[index].imageUrl,
+                       imageurl: myDoctorProvider.doctorsD[index].imageUrl,
                           college: myDoctorProvider.doctorsD[index].college,
                           work: myDoctorProvider.doctorsD[index].work,
                           name: myDoctorProvider.doctorsD[index].name,

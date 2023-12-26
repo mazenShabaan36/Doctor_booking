@@ -29,18 +29,18 @@ class _ProfileScreenState extends State<ProfileScreen> {
               child: Column(
                 children: <Widget>[
                   SizedBox(
-                    height: 110,
+                    height: 70,
                   ),
                   CircleAvatar(
                     radius: 65.0,
-                    backgroundImage: AssetImage('assets/me.jpg'),
+                    backgroundImage: AssetImage('assets/kanoza.jpg'),
                     backgroundColor: Colors.white,
                   ),
                   SizedBox(
                     height: 10,
                   ),
                   Text(
-                    'Mazen shabaan',
+                    'kenzy kazak',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 25,
@@ -50,7 +50,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     height: 10,
                   ),
                   Text(
-                    '23 Years Old | Male',
+                    '20 Years Old | Female',
                     style: TextStyle(
                       color: Colors.grey.shade700,
                       fontSize: 15,
@@ -69,9 +69,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   margin: const EdgeInsets.fromLTRB(0, 45, 0, 0),
                   child: Container(
                     width: 300,
-                    height: 340,
+                    height: 370,
                     child: Padding(
-                      padding: const EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(8),
                       child: Column(
                         children: [
                           const Text(
@@ -97,11 +97,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               ),
                               TextButton(
                                 onPressed: () {
+                                  /*
                                   Navigator.of(context).push(
                                     MaterialPageRoute(
                                       builder: (context) => DashboardScreen(),
                                     ),
                                   );
+                                  */
                                 },
                                 child: const Text(
                                   "Profile",
@@ -113,7 +115,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               ),
                             ],
                           ),
-                          Config.spaceSmall,
+                         
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
@@ -137,7 +139,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               ),
                             ],
                           ),
-                          Config.spaceSmall,
+                        
                            Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
@@ -151,11 +153,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               ),
                               TextButton(
                                 onPressed: () {
+                                  /*
                                   Navigator.of(context).push(
                                     MaterialPageRoute(
                                       builder: (context) => DashboardScreen(),
                                     ),
                                   );
+                                  */
                                 },
                                 child: const Text(
                                   "Dashboards",

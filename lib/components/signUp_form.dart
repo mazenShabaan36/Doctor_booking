@@ -52,26 +52,28 @@ class _SignUpFormState extends State<SignUpForm> {
           cursorColor: Config.primaryColor,
           obscureText: obsecurePass,
           decoration: InputDecoration(
-              hintText: 'Password',
-              labelText: 'Password',
-              alignLabelWithHint: true,
-              prefixIcon: const Icon(Icons.lock_outline),
-              prefixIconColor: Config.primaryColor,
-              suffixIcon: IconButton(
-                  onPressed: () {
-                    setState(() {
-                      obsecurePass = !obsecurePass;
-                    });
-                  },
-                  icon: obsecurePass
-                      ? const Icon(
-                          Icons.visibility_off_outlined,
-                          color: Colors.black38,
-                        )
-                      : const Icon(
-                          Icons.visibility_outlined,
-                          color: Config.primaryColor,
-                        ))),
+            hintText: 'Password',
+            labelText: 'Password',
+            alignLabelWithHint: true,
+            prefixIcon: const Icon(Icons.lock_outline),
+            prefixIconColor: Config.primaryColor,
+            suffixIcon: IconButton(
+              onPressed: () {
+                setState(() {
+                  obsecurePass = !obsecurePass;
+                });
+              },
+              icon: obsecurePass
+                  ? const Icon(
+                      Icons.visibility_off_outlined,
+                      color: Colors.black38,
+                    )
+                  : const Icon(
+                      Icons.visibility_outlined,
+                      color: Config.primaryColor,
+                    ),
+            ),
+          ),
         ),
         Config.spaceSmall,
       ],

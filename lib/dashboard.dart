@@ -18,27 +18,32 @@ class DashboardScreen extends StatelessWidget {
       ),
       body: Consumer<doctors>(
         builder: (context, doc, index) {
-          return Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              KPIWidget(
-                title: 'Minimum Rating for doctors ',
-                value: myDoctorRateProvider.getMinRating(),
+          return SingleChildScrollView(
+            child: Container(
+              height: MediaQuery.of(context).size.height*0.97,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  KPIWidget(
+                    title: 'Minimum Rating for doctors ',
+                    value: myDoctorRateProvider.getMinRating(),
+                  ),
+                  KPIWidget(
+                    title: 'Maximum Rating for doctors',
+                    value: myDoctorRateProvider.getMaxRating(),
+                  ),
+                   KPIWidget(
+                    title: 'Average Rating for doctors',
+                    value: myDoctorRateProvider.getAverageRating(),
+                  ),
+                  SizedBox(height: 10),
+                      
+                  Expanded(
+                    child: DonutChartWidget(),
+                  ),
+                ],
               ),
-              KPIWidget(
-                title: 'Maximum Rating for doctors',
-                value: myDoctorRateProvider.getMaxRating(),
-              ),
-               KPIWidget(
-                title: 'Average Rating for doctors',
-                value: myDoctorRateProvider.getAverageRating(),
-              ),
-              SizedBox(height: 20),
-
-              Expanded(
-                child: DonutChartWidget(),
-              ),
-            ],
+            ),
           );
         },
       ),

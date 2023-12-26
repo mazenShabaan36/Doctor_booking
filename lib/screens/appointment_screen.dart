@@ -22,11 +22,7 @@ class _AppointmentPageState extends State<AppointmentPage> {
     final scheduleProvider = Provider.of<schedules>(context);
     return Consumer<schedules>(
       builder: (context, schedule, child) {
-        /*  List<dynamic> filteredSchedules =
-            scheduleProvider.schedul.where((schedule) {
-          return schedule['status'] == status;
-        }).toList();
-        */
+
         List<dynamic> filteredSchedules = [];
         for (var i = 0; i < scheduleProvider.schedul.length; i++) {
           if (scheduleProvider.schedul[i]['status'].toString().toLowerCase() == status.toString().toLowerCase()) {

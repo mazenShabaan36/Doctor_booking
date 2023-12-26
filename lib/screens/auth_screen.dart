@@ -24,7 +24,7 @@ class _AuthPAgeState extends State<AuthPAge> {
           vertical: 35,
         ),
         child: SingleChildScrollView(
-          child: SizedBox(
+          child: SizedBox( // to avoid parent error 
             height: Config.screenHeight!*0.95,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -83,9 +83,9 @@ class _AuthPAgeState extends State<AuthPAge> {
                   ),
                 ),
                 Config.spaceSmall,
-                Row(
+               const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: const <Widget>[
+                  children:  <Widget>[
                     SocialButton(social: 'google'),
                     SocialButton(social: 'facebook'),
                   ],

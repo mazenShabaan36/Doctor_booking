@@ -54,7 +54,7 @@ class _DoctorDetailsState extends State<DoctorDetails> {
           children: <Widget>[
             Container(
               width: double.infinity,
-              height: MediaQuery.of(context).size.height *0.38,
+              height: MediaQuery.of(context).size.height *0.42,
               child: Column(
                 children: <Widget>[
                   CircleAvatar(
@@ -104,14 +104,14 @@ class _DoctorDetailsState extends State<DoctorDetails> {
             Container(
               padding: const EdgeInsets.all(20),
               margin: const EdgeInsets.all(20),
-              height: MediaQuery.of(context).size.height *0.3,
+              height: MediaQuery.of(context).size.height *0.33,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
                   // Config.spaceSmall,
                   Expanded(
                     child: Container(
-                      height: MediaQuery.of(context).size.height*0.06,
+                      height: MediaQuery.of(context).size.height*0.07,
                       width: MediaQuery.of(context).size.width*0.2,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),

@@ -26,8 +26,8 @@ class _MainLayoutState extends State<MainLayout> {
         }),
         children: [
           HomePage(),
-          AppointmentPage(),
-          ProfileScreen(),
+         Container(),// AppointmentPage(),
+        ProfileScreen(),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
