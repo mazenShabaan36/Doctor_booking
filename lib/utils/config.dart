@@ -10,6 +10,7 @@ class Config {
     screenWidth = mediaQueryData!.size.width;
     screenHeight = mediaQueryData!.size.height;
   }
+  
 
   static get widthSize {
     return screenWidth;
